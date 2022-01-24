@@ -1,0 +1,212 @@
+/* Start Globals */
+html {
+  font-size: 100%;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* End Globals */
+
+/* Start Media Qurise */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width: 922px) and (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Media Qurise */
+
+/* Header */
+.header {
+  padding: 18px 0;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  z-index: 333;
+  left: 0;
+  top: 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header div.logo {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.header nav.nav ul.list {
+  display: flex;
+  gap: 15px;
+}
+
+.header nav.nav ul.list li a {
+  padding: 5px 18px;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  display: block;
+  border-radius: 30px;
+  transition: 300ms;
+}
+
+.header nav.nav ul.list li a.active,
+.header nav.nav ul.list li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Main */
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.stars {
+  z-index: 1;
+  object-fit: contain;
+}
+
+.moon {
+  z-index: 2;
+}
+
+.mountain-1 {
+  z-index: 3;
+}
+
+.mountain-2 {
+  z-index: 8;
+}
+
+.head {
+  position: absolute;
+  right: 100%;
+  top: 60%;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  transition: 50ms;
+}
+
+.head h1 {
+  color: rgb(214, 214, 214);
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  z-index: 999;
+}
+
+.button a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: black;
+  background: white;
+  font-size: 18px;
+  font-weight: 300;
+  user-select: none;
+}
+
+/* Text */
+#text {
+  background: #321433;
+  height: 100%;
+  padding: 20px;
+}
+
+#text h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#text p {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
